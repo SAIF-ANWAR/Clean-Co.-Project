@@ -48,9 +48,20 @@ const Navbar = ({ children }) => {
             <div class="drawer-side">
                 <label for="my-drawer-3" class="drawer-overlay"></label>
                 <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
-                    <li><a>Sidebar Item 1</a></li>
-                    <li><a>Sidebar Item 2</a></li>
-
+                    <li><NavLink to='/'>Home</NavLink></li>
+                    <li><NavLink to='/about'>About</NavLink></li>
+                    <li><NavLink to='/services'>Services</NavLink></li>
+                    <li><NavLink to='/contact'>Contact</NavLink></li>
+                    <li><NavLink to='/login'>Login</NavLink></li>
+                    <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                        <div class="collapse-title text-xl font-medium">
+                            Book Now
+                        </div>
+                        <div class="collapse-content">
+                            <li><NavLink to='/contact'>Quick book</NavLink></li>
+                            <li><NavLink to='/login'>Pre book</NavLink></li>
+                        </div>
+                    </div>
                 </ul>
 
             </div>
