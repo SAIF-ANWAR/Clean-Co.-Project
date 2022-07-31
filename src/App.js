@@ -5,6 +5,8 @@ import { publicRoute } from "./routes/publicRoute";
 import Services from "./pages/Services";
 import PrivateRoute from "./authentication/PrivateRoute";
 import About from "./pages/About";
+import AdminRoute from "./authentication/AdminRoute";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 
 
@@ -27,6 +29,9 @@ function App() {
           <Route element={<PrivateRoute />}>
             <Route path="/about" element={<About />}></Route>
             <Route path="/services" element={<Services />}></Route>
+          </Route>
+          <Route element={<AdminRoute />}>
+            <Route path='/dashboard' element={<Dashboard />}></Route>
           </Route>
         </Routes>
 
