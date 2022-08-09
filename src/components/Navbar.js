@@ -29,7 +29,7 @@ const Navbar = ({ children }) => {
                         <ul class="menu menu-horizontal">
                             <li><NavLink to='/'>Home</NavLink></li>
                             {
-                                admin && <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
+                                admin && <li><NavLink to='/dashboard/add-service'>Dashboard</NavLink></li>
                             }
                             <li><NavLink to='/about'>About</NavLink></li>
                             <li><NavLink to='/services'>Services</NavLink></li>
